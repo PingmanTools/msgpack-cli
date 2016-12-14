@@ -167,7 +167,7 @@ namespace MsgPack.Serialization.EmittingSerializers
 			}
 			else
 			{
-				assemblyName = typeof( SerializationMethodGeneratorManager ).Namespace + ".GeneratedSerealizers" + Interlocked.Increment( ref _assemblySequence );
+				assemblyName = typeof( SerializationMethodGeneratorManager ).Namespace + ".GeneratedSerializers" + Interlocked.Increment( ref _assemblySequence );
 				var dedicatedAssemblyBuilder =
 #if !NETSTANDARD1_1 && !NETSTANDARD1_3
 					AppDomain.CurrentDomain.DefineDynamicAssembly(
